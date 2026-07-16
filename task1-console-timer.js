@@ -20,3 +20,16 @@ setTimeout(() => {
 },1000);
 
 console.log("End");
+
+/*
+Output Order:
+Start
+End
+Calculation started...
+Calculation done
+
+Explanation:
+JavaScript is single-threaded.
+The setTimeout callback is sent to the browser timer.
+The callback executes only after the call stack becomes empty.
+*/
